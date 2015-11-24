@@ -1,0 +1,10 @@
+<h1>{{thread.title}}</h1>
+<input type="text" name="response" ng-model="thread.response" placeholder="Enter a response" value="">
+<button type="button" ng-click="getQuestion(thread)" name="button">Add thread</button>
+<div ng-repeat="thread in allQuestions">
+  <article>
+    <p>
+      {{thread.response}}
+    </p>
+  </article>
+</div>

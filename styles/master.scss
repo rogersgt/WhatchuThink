@@ -1,0 +1,64 @@
+@import "variables";
+
+//////////////////////////// general /////////////////////////
+body {
+  font-family: "Arial";
+  background-color: $greenish;
+}
+h1 {
+  padding: 1%;
+  font-family: "Text Me One";
+  color: black;
+  text-shadow: 2px 2px 4px white;
+  background: linear-gradient(to right, $articleColor, $articleColor2, $greenish, $greenish)
+}
+input {
+  border-radius: .8em;
+  border: none;
+  padding: 1%;
+  width: 20%;
+  &:focus {
+    outline: none;
+  }
+}
+button {
+  color: white;
+  text-shadow: 1px 1px 2px black;
+  border: none;
+  background: linear-gradient(to bottom, $submit, $submit2, $submit);
+  border-radius: .8em;
+  padding: 1%;
+  transition-duration: 1s;
+  vertical-align: middle;
+  &:hover {
+    font-size: 1.2em;
+  }
+}
+
+/////////////////////////// posts ////////////////////////////
+
+article {
+  background: linear-gradient(to bottom, $articleColor, $articleColor2, $articleColor);
+  width: 80%;
+  border-radius: 1em;
+  margin: 0 auto;
+  box-shadow: 2px 2px 4px black;
+  h3 {
+    text-align: center;
+    color: white;
+  }
+  p {
+    padding: 3%;
+    text-align: center;
+  }
+  a {
+    margin: 0 5%;
+    text-decoration: none;
+    color: white;
+    transition-duration: .5s;
+    &:hover {
+      font-size: 1.2em;
+      text-shadow: 1px 1px 2px black;
+    }
+  }
+}

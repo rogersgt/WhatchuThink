@@ -1,0 +1,15 @@
+<h1>Whatchu Think</h1>
+<hr>
+<input type="text" name="title" ng-model="thread.title" placeholder="title" value="">
+<input type="text" ng-model="thread.details" name="details" placeholder="details" value="">
+<button type="button" ng-click="getQuestion(thread)" name="button">Add thread</button>
+<div ng-repeat="thread in allQuestions">
+  <article id='{{thread._id}}'>
+    <h3>{{thread.title}}</h3>
+    <button ng-click="delete(thread)" type="button" name="delete">remove</button>
+    <p>
+      {{thread.details}}
+    </p>
+    <a  ng-click="toResponses(thread)" href="">respond</a>
+  </article>
+</div>

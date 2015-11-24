@@ -1,0 +1,51 @@
+body {
+  font-family: "Arial";
+  background-color: #A2A384; }
+
+h1 {
+  padding: 1%;
+  font-family: "Text Me One";
+  color: black;
+  text-shadow: 2px 2px 4px white;
+  background: linear-gradient(to right, #DD423E, #e88989, #A2A384, #A2A384); }
+
+input {
+  border-radius: .8em;
+  border: none;
+  padding: 1%;
+  width: 20%; }
+  input:focus {
+    outline: none; }
+
+button {
+  color: white;
+  text-shadow: 1px 1px 2px black;
+  border: none;
+  background: linear-gradient(to bottom, #3083d0, #94cbf6, #3083d0);
+  border-radius: .8em;
+  padding: 1%;
+  transition-duration: 1s;
+  vertical-align: middle; }
+  button:hover {
+    font-size: 1.2em; }
+
+article {
+  background: linear-gradient(to bottom, #DD423E, #e88989, #DD423E);
+  width: 80%;
+  border-radius: 1em;
+  margin: 0 auto;
+  box-shadow: 2px 2px 4px black; }
+  article h3 {
+    text-align: center;
+    color: white; }
+  article p {
+    padding: 3%;
+    text-align: center; }
+  article a {
+    margin: 0 5%;
+    text-decoration: none;
+    color: white;
+    transition-duration: .5s; }
+    article a:hover {
+      font-size: 1.2em;
+      text-shadow: 1px 1px 2px black; }
