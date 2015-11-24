@@ -28,6 +28,8 @@ button {
   vertical-align: middle; }
   button:hover {
     font-size: 1.2em; }
+  button:focus {
+    outline: none; }
 
 article {
   background: linear-gradient(to bottom, #DD423E, #e88989, #DD423E);

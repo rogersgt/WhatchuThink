@@ -13,6 +13,7 @@
       $scope.getQuestion = function(item) {
         Questions.startConversation(item).then(function() {
           getAllQuestions();
+          angular.element(document).find('input').val("");
         });
       }
 
